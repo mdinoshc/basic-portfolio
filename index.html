@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <title>
+            Responsive form
+        </title>
+        <meta charset="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="backend.js"></script>
+    </head>
+    <body>
+        <form name="form_1" action="#" onsubmit="return validate()">
+            <h2>Responsive form</h2>
+            <table width="80%">
+                <tr>
+                    <td><input type="text" placeholder="First Name" name="firstname" required/><span id="first_name"></span></td>
+                </tr>
+                <tr>
+                    <td><input type="text" placeholder="Last Name" name="lastname" required/><span id="last_name"></span></td>
+                </tr>
+                <tr>
+                    <td><input type="text" placeholder="Age" name="age" required/><span id="ageno"></span></td>
+                </tr>
+                <tr>
+                    <td><input type="text" placeholder="Phone no." name="phoneno" required/><span id="phone_no"></span></td>
+                </tr>
+                <tr>
+                    <td><input type="text" placeholder="Email" name="email" required/><span id="emailenter"></span></td>
+                </tr>
+                <tr>
+                    <td><input type="text" placeholder="Website" name="website" required/><span id="weburl"></span></td>
+                </tr>
+                <tr>
+                    <td><input type="password" placeholder="Password" name="password" required/><span id="passwd"></span></td>
+                </tr>
+                <tr>
+                    <td><input type="password" placeholder="Confirm Password" name="conpassword" required/><span id="conpasswd"></span><span id="pwdmatch"></span></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Gender:</label><br>
+                        <input type="radio" id="male" value="Male" name="gender"/>
+                        <label>Male</label>
+                        <input type="radio" id="female" value="Female" name="gender"/>
+                        <label>Female</label>
+                        <input type="radio" id="others" value="Others" name="gender" required/>
+                        <label>Other</label>
+                        <span id="gender_valid"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="bdate" placeholder="Birthdate" name="date" required/><span id="birthdate"></span></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Languages:</label><br>
+                        <input type="checkbox" id="java" name="cslang" value="Java"/>
+                        <label for="java">Java</label>
+                        <input type="checkbox" id="c" name="cslang" value="C"/>
+                        <label for="c">C</label>
+                        <input type="checkbox" id="mysql" name="cslang" value="MySQL" required/>
+                        <label for="mysql">MySQL</label>
+                        <input type="checkbox" id="c++" name="cslang" value="C++"/>
+                        <label for="c++">C++</label>
+                        <input type="checkbox" id="python" name="cslang" value="Python" required/>
+                        <label for="python">Python</label>
+                        <span id="chkbox_valid"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Course:</label><br>
+                        <select id="course">
+                            <option value="0">Select course</option>
+                            <option value="1">Computer Science</option>
+                            <option value="2">Software Engineering</option>
+                            <option value="3">Fullstack Development</option>
+                            <option value="4">Machine Learning</option>
+                            <option value="5">Artificial Intelligence</option>
+                            <option value="6">Graphic Designing</option>
+                            <option value="7">Data Science</option>
+                        </select>
+                        <span id="select_valid"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Skill range:</label><br>
+                        <input type="range" id="range" min="0" max="50"><p id="rangevalue"></p><span id="rangealert"></span>
+                    </td>
+                </tr>
+                <tr>
+                    
+                    <td>
+                        <label>Profile color code:</label><br>
+                        <input type="color" id="color" value="#000000"><p id="colorcode"></p><span id="coloralert"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Profile image:</label><br>
+                        <input type="file" id="myphoto" accept="image/*"><span id="img_valid"></span>
+                    </td>
+                </tr>
+            </table>
+            <div class="buttons">
+                <input type="submit" value="Submit"/>
+                <input type="reset" value="Reset"/>
+            </div>
+        </form>
+    </body>
+</html>
